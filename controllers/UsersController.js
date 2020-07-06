@@ -7,6 +7,7 @@ exports.new = (req, res) => {
   });
 };
 
+
 exports.create = async (req, res) => {
   const userDetails = req.body;
   req.session.flash = {};
