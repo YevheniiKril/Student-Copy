@@ -17,13 +17,13 @@
       <% if (authorized) { %>
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" id="reservationsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Reservations
+            Stories
           </a>
 
           <div class="dropdown-menu" aria-labelledby="reservationsDropdown">
-            <a href="/resources" class="dropdown-item">Scheduled Reservations</a>
+            <a href="/resources" class="dropdown-item">Stories</a>
             <div class="dropdown-divider"></div>
-            <a href="/resources/new" class="dropdown-item">New Reservation</a>
+            <a href="/resources/new" class="dropdown-item">New Storie</a>
           </div>
         </li>
       <% } %>
@@ -32,7 +32,7 @@
     <ul class="navbar-nav">
       <% if (!authorized) { %>
         <li class="nav-item">
-          <a href="/users/new" class="nav-link">
+          <a href="/register" class="nav-link">
             <i class="fa fa-user-plus"></i>
             Register
           </a>
