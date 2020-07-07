@@ -22,7 +22,7 @@ const ResourceSchema = new mongoose.Schema({
   },
   title: {
     type: String,
-    required: true // This must exist
+    required: true 
   },
   content: {
     type: String,
@@ -37,7 +37,6 @@ const ResourceSchema = new mongoose.Schema({
   timestamps: true
 });
 
-// Query Helpers
 ResourceSchema.query.drafts = function () {
   return this.where({
     status: 'DRAFT'
