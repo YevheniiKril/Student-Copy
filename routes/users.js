@@ -1,3 +1,4 @@
+const router = require('express').Router();
 const { new: _new, create } = require('../controllers/UsersController');
 
 module.exports = router => {
